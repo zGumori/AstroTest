@@ -1,48 +1,48 @@
-# Astro Starter Kit: Basics
+# Netmon 🎮
 
-```sh
-npm create astro@latest -- --template basics
-```
+![Netmon Logo](https://via.placeholder.com/800x200?text=Netmon)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 🌟 Acerca del Proyecto
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Netmon es un apasionante juego de rol inspirado en clásicos como Pokémon y Digimon World. Explora un mundo abierto digital, captura criaturas conocidas como "Netmons", entrena a tu equipo y enfréntate a emocionantes combates en tiempo real.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+Desarrollado en Godot Engine, Netmon combina la nostalgia de los juegos clásicos con mecánicas modernas y una historia única ambientada en un mundo digital.
 
-## 🚀 Project Structure
+## ✨ Características Principales
 
-Inside of your Astro project, you'll see the following folders and files:
+- **Exploración en vista isométrica** - Recorre un mundo 2D de pixel art lleno de vida y misterios
+- **Captura y evolución** - Encuentra y añade Netmons a tu equipo mediante el sistema de "NetLinking"
+- **Sistema de combate dinámico** - Batallas en tiempo real con la posibilidad de intervención del jugador
+- **Equipo personalizable** - Forma un equipo de hasta 5 Netmons con distintas habilidades y tipos
+- **Atributos profundos** - Sistema de estadísticas detallado que incluye hambre, felicidad y afinidad
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## 🎮 Mecánicas de Juego
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+### Exploración
+- Mundo abierto al estilo Pokémon con ciudades, rutas y zonas de exploración
+- Tu Netmon principal te seguirá durante la aventura
+- Posibilidad de encuentros aleatorios con Netmons salvajes
 
-## 🧞 Commands
+### Sistema de Combate
+- Combate en tiempo real parcialmente automatizado
+- Cada Netmon posee 4 habilidades disponibles
+- Posibilidad de intervención del jugador para ordenar habilidades específicas
+- El combate se basa en estadísticas como HP, ataque, defensa, velocidad, etc.
 
-All commands are run from the root of the project, from a terminal:
+### NetLinking (Captura)
+- Enfréntate a Netmons salvajes y debilítalos
+- Inicia el proceso de NetLinking para intentar añadirlos a tu equipo
+- Sistema de escaneo y descifrado de encriptación que depende de varios factores
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## 📜 Licencia
 
-## 👀 Want to learn more?
+Este proyecto está bajo la licencia [MIT](LICENSE).
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 📞 Contacto
+
+- **Correo:** zgumori@gmail.com
+- **Discord:** [Servidor de la Comunidad](https://discord.gg/jCWk8mT)
+
+---
+
+*Desarrollado con ❤️ por [Gumori]*
