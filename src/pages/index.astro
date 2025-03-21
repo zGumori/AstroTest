@@ -1,14 +1,22 @@
 ---
+import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
 import About from '../components/About.astro';
 import Download from '../components/Download.astro';
-import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout>
+<Layout title="Netmon">
 	<Header />
-	<Hero />
-	<About />
-	<Download />
+	<main>
+		<section id="inicio">
+			<Hero />
+		</section>
+		<section id="about">
+			<About />
+		</section>
+		<section id="download">
+			<Download />
+		</section>
+	</main>
 </Layout>

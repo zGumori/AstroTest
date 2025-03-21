@@ -1,7 +1,75 @@
-<div class="fixed top-0 left-0 right-0 z-50 flex justify-center items-center gap-5 py-5 backdrop-blur-md bg-black/20">
-    <button class="px-3 py-2 text-white cursor-pointer hover:text-zinc-400 transition-all duration-300 hover:-translate-y-0.5 font-light tracking-wide">Inicio</button>
-    <button class="px-3 py-2 text-white cursor-pointer hover:text-zinc-400 transition-all duration-300 hover:-translate-y-0.5 font-light tracking-wide">Sobre el juego</button>
-    <button class="px-3 py-2 text-white cursor-pointer hover:text-zinc-400 transition-all duration-300 hover:-translate-y-0.5 font-light tracking-wide">Características</button>
-    <button class="px-3 py-2 text-white cursor-pointer hover:text-zinc-400 transition-all duration-300 hover:-translate-y-0.5 font-light tracking-wide">Descarga</button>
-    <button class="px-3 py-2 text-white cursor-pointer hover:text-zinc-400 transition-all duration-300 hover:-translate-y-0.5 font-light tracking-wide">Contacto</button>
-</div>
+<header class="fixed top-0 left-0 right-0 z-50 theme-transition backdrop-blur-sm    " style="background-color: var(--header-bg);">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <a href="/" class="text-2xl font-bold" style="color: var(--header-text);">Netmon</a>
+            </div>
+
+            <!-- Menú de navegación -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#inicio" class="text-sm font-medium transition-colors duration-200 hover:opacity-80" style="color: var(--header-text);">Inicio</a>
+                <a href="#about" class="text-sm font-medium transition-colors duration-200 hover:opacity-80" style="color: var(--header-text);">About</a>
+                <a href="#download" class="text-sm font-medium transition-colors duration-200 hover:opacity-80" style="color: var(--header-text);">Descargar</a>
+            </div>
+
+            <!-- Botón de tema -->
+            <button id="theme-toggle" class="p-2 rounded-lg cursor-pointer transition-colors duration-200 hover:opacity-80" style="background-color: var(--card-bg);">
+                <!-- Ícono de sol (tema claro) -->
+                <svg id="sun-icon" class="w-5 h-5 hidden" style="color: var(--header-text);" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"/>
+                </svg>
+                <!-- Ícono de luna (tema oscuro) -->
+                <svg id="moon-icon" class="w-5 h-5" style="color: var(--header-text);" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<script>
+    // Función para establecer el tema
+    function setTheme(theme) {
+        if (theme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            document.getElementById('sun-icon').classList.remove('hidden');
+            document.getElementById('moon-icon').classList.add('hidden');
+        } else {
+            document.documentElement.removeAttribute('data-theme');
+            document.getElementById('sun-icon').classList.add('hidden');
+            document.getElementById('moon-icon').classList.remove('hidden');
+        }
+        localStorage.setItem('theme', theme);
+    }
+
+    // Función para obtener el tema actual
+    function getTheme() {
+        if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+            return localStorage.getItem('theme');
+        }
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            return 'dark';
+        }
+        return 'light';
+    }
+
+    // Función para alternar el tema
+    function toggleTheme() {
+        const currentTheme = getTheme();
+        setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+    }
+
+    // Configurar el tema inicial
+    setTheme(getTheme());
+
+    // Agregar el evento click al botón
+    document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+
+    // Escuchar cambios en las preferencias del sistema
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        if (!localStorage.getItem('theme')) {
+            setTheme(e.matches ? 'dark' : 'light');
+        }
+    });
+</script>

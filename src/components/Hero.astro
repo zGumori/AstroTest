@@ -1,39 +1,20 @@
-<div class="relative grid min-h-screen place-content-center bg-black">
-    <!-- Efecto de ruido sutil -->
-    <div class="absolute inset-0 bg-[url('/noise.png')] opacity-5"></div>
-    
-    <!-- Contenido principal -->
-    <div class="relative flex flex-col items-center gap-12 px-4 text-center">
-        <div class="space-y-4">
-            <span class="inline-flex items-center rounded-full border border-zinc-800 px-3 py-1 text-sm font-light text-zinc-400">
-                v0.0.1 Alpha
-            </span>
-            <h1 class="text-7xl font-extrabold tracking-tighter text-white">
-                Netmon
-                <span class="inline-block animate-pulse font-thin">_</span>
-            </h1>
-        </div>
-        
-        <p class="max-w-2xl text-xl font-light text-zinc-400 tracking-wide">
-            Explora un mundo abierto digital, captura criaturas conocidas como "Netmons",
-            entrena a tu equipo y enfréntate a emocionantes combates en tiempo real.
+<section class="min-h-screen flex items-center justify-center theme-transition" style="background: linear-gradient(to bottom, var(--background), var(--card-bg));">
+    <div class="text-center px-4">
+        <span class="text-sm font-light" style="color: var(--text); opacity: 0.7;">Versión 1.0.0</span>
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-6" style="color: var(--text);">
+            Netmon
+            <span class="font-thin" style="opacity: 0.7;">_</span>
+        </h1>
+        <p class="text-xl font-light tracking-wide mb-8 max-w-2xl mx-auto" style="color: var(--text); opacity: 0.7;">
+            Explora el mundo digital, captura Netmons únicos y conviértete en el mejor entrenador.
         </p>
-        
-        <div class="flex gap-6">
-            <a href="#" 
-               class="group relative rounded-lg bg-white px-8 py-4 font-medium tracking-wide text-black transition-all hover:scale-105">
-                Comenzar
-                <span class="absolute inset-x-0 -bottom-px h-px w-full bg-gradient-to-r from-transparent via-zinc-500 to-transparent opacity-0 transition-all group-hover:opacity-100"></span>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#download" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-colors duration-300">
+                Descargar Ahora
             </a>
-            <a href="Download.astro" 
-               class="group rounded-lg border border-zinc-800 px-8 py-4 font-medium tracking-wide text-white transition-all hover:bg-zinc-800">
-                Descarga →
+            <a href="#about" class="px-8 py-3 rounded-lg font-bold transition-colors duration-300" style="background-color: var(--card-bg); color: var(--text);">
+                Conoce Más
             </a>
         </div>
     </div>
-
-    <!-- Decoración de fondo -->
-    <div class="pointer-events-none absolute inset-0 flex items-center justify-center">
-        <div class="h-[500px] w-[500px] rounded-full bg-zinc-900/50 blur-3xl"></div>
-    </div>
-</div>
+</section>

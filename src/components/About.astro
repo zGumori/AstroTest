@@ -1,93 +1,126 @@
-<section class="min-h-screen bg-black py-20 px-4">
+<section class="py-20 px-4 theme-transition" style="background-color: var(--background);">
     <!-- SVG Pattern Definition -->
     <svg class="hidden">
         <defs>
             <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                <circle cx="10" cy="10" r="1.5" fill="currentColor" class="text-zinc-700 group-hover:text-zinc-500 transition-colors duration-300"/>
+                <circle cx="10" cy="10" r="1.5" fill="currentColor" style="color: var(--text); opacity: 0.3;"/>
             </pattern>
         </defs>
     </svg>
 
     <!-- Título principal -->
     <div class="max-w-4xl mx-auto text-center mb-16">
-        <h2 class="text-4xl font-extrabold text-white mb-4">Sobre Netmon</h2>
-        <p class="text-xl font-light text-zinc-400">Un mundo digital donde la aventura y la estrategia se encuentran</p>
+        <h2 class="text-4xl font-extrabold mb-4" style="color: var(--text);">Sobre Netmon</h2>
+        <p class="text-xl font-light" style="color: var(--text); opacity: 0.7;">Un mundo digital lleno de aventuras y criaturas únicas</p>
     </div>
 
-    <!-- Grid de características principales -->
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-        <!-- Exploración -->
-        <div class="group relative p-6 rounded-xl border border-zinc-800 hover:border-zinc-600 transition-all duration-300 overflow-hidden">
-            <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIxLjUiIGZpbGw9IiM3MTcyN2EiLz48L3N2Zz4=')] opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
+    <!-- Características principales -->
+    <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-8 mb-16">
+        <div class="group relative p-6 rounded-xl border theme-transition overflow-hidden" style="border-color: var(--card-border); background-color: var(--card-bg);">
+            <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIxLjUiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjwvc3ZnPg==')] opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
             <div class="relative">
-                <div class="text-2xl mb-4 text-white">🌍</div>
-                <h3 class="text-xl font-bold text-white mb-2">Mundo Abierto</h3>
-                <p class="text-zinc-400 font-light">Explora un vasto mundo digital con ciudades, rutas y áreas especiales. Cada rincón guarda secretos y nuevas aventuras.</p>
+                <h3 class="text-2xl font-bold mb-4" style="color: var(--text);">Mundo Abierto</h3>
+                <p class="font-light" style="color: var(--text); opacity: 0.7;">Explora un vasto mundo digital lleno de secretos y sorpresas.</p>
             </div>
         </div>
 
-        <!-- Combate -->
-        <div class="group relative p-6 rounded-xl border border-zinc-800 hover:border-zinc-600 transition-all duration-300 overflow-hidden">
-            <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIxLjUiIGZpbGw9IiM3MTcyN2EiLz48L3N2Zz4=')] opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
+        <div class="group relative p-6 rounded-xl border theme-transition overflow-hidden" style="border-color: var(--card-border); background-color: var(--card-bg);">
+            <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIxLjUiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjwvc3ZnPg==')] opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
             <div class="relative">
-                <div class="text-2xl mb-4 text-white">⚔️</div>
-                <h3 class="text-xl font-bold text-white mb-2">Combate en Tiempo Real</h3>
-                <p class="text-zinc-400 font-light">Sistema de combate dinámico donde la estrategia y la velocidad son clave. Intervén en momentos cruciales para cambiar el curso de la batalla.</p>
+                <h3 class="text-2xl font-bold mb-4" style="color: var(--text);">Combate en Tiempo Real</h3>
+                <p class="font-light" style="color: var(--text); opacity: 0.7;">Sistema de combate dinámico con estrategias únicas.</p>
             </div>
         </div>
 
-        <!-- Netmons -->
-        <div class="group relative p-6 rounded-xl border border-zinc-800 hover:border-zinc-600 transition-all duration-300 overflow-hidden">
-            <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIxLjUiIGZpbGw9IiM3MTcyN2EiLz48L3N2Zz4=')] opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
+        <div class="group relative p-6 rounded-xl border theme-transition overflow-hidden" style="border-color: var(--card-border); background-color: var(--card-bg);">
+            <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIxLjUiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjwvc3ZnPg==')] opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
             <div class="relative">
-                <div class="text-2xl mb-4 text-white">🎮</div>
-                <h3 class="text-xl font-bold text-white mb-2">Sistema de Netmons</h3>
-                <p class="text-zinc-400 font-light">Captura, entrena y evoluciona tus Netmons. Cada uno tiene habilidades únicas y estadísticas que puedes mejorar.</p>
+                <h3 class="text-2xl font-bold mb-4" style="color: var(--text);">Sistema de Netmons</h3>
+                <p class="font-light" style="color: var(--text); opacity: 0.7;">Más de 100 criaturas únicas para capturar y entrenar.</p>
             </div>
         </div>
     </div>
 
-    <!-- Sección de características detalladas -->
-    <div class="max-w-4xl mx-auto">
-        <div class="space-y-12">
-            <!-- Exploración y Mundo -->
-            <div class="space-y-4">
-                <h3 class="text-2xl font-bold text-white">Exploración y Mundo</h3>
+    <!-- Exploración y Mundo -->
+    <div class="max-w-4xl mx-auto mb-16">
+        <div class="group relative p-6 rounded-xl border theme-transition overflow-hidden" style="border-color: var(--card-border); background-color: var(--card-bg);">
+            <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIxLjUiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjwvc3ZnPg==')] opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
+            <div class="relative">
+                <h3 class="text-2xl font-bold mb-4" style="color: var(--text);">Exploración y Mundo</h3>
                 <div class="grid md:grid-cols-2 gap-6">
-                    <div class="group relative p-6 rounded-xl border border-zinc-800 hover:border-zinc-600 transition-all duration-300 overflow-hidden">
-                        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIxLjUiIGZpbGw9IiM3MTcyN2EiLz48L3N2Zz4=')] opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
-                        <div class="relative">
-                            <h4 class="text-xl font-bold text-white mb-2">Mapa y Entorno</h4>
-                            <p class="text-zinc-400 font-light">Diseño extenso con ciudades, rutas y áreas especiales para explorar.</p>
-                        </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2" style="color: var(--text);">Mapa y Entorno</h4>
+                        <ul class="space-y-2 font-light" style="color: var(--text); opacity: 0.7;">
+                            <li>• Diseño extenso con ciudades y rutas</li>
+                            <li>• Áreas especiales para explorar</li>
+                            <li>• Secretos ocultos en cada rincón</li>
+                        </ul>
                     </div>
-                    <div class="group relative p-6 rounded-xl border border-zinc-800 hover:border-zinc-600 transition-all duration-300 overflow-hidden">
-                        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIxLjUiIGZpbGw9IiM3MTcyN2EiLz48L3N2Zz4=')] opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
-                        <div class="relative">
-                            <h4 class="text-xl font-bold text-white mb-2">Movimiento Libre</h4>
-                            <p class="text-zinc-400 font-light">Explora el mundo sin restricciones y descubre todos sus secretos.</p>
-                        </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2" style="color: var(--text);">Movimiento Libre</h4>
+                        <ul class="space-y-2 font-light" style="color: var(--text); opacity: 0.7;">
+                            <li>• Exploración sin restricciones</li>
+                            <li>• Descubre todos los secretos</li>
+                            <li>• Encuentra Netmons raros</li>
+                        </ul>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <!-- Sistema de Combate -->
-            <div class="space-y-4">
-                <h3 class="text-2xl font-bold text-white">Sistema de Combate</h3>
+    <!-- Sistema de Combate -->
+    <div class="max-w-4xl mx-auto mb-16">
+        <div class="group relative p-6 rounded-xl border theme-transition overflow-hidden" style="border-color: var(--card-border); background-color: var(--card-bg);">
+            <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIxLjUiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjwvc3ZnPg==')] opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
+            <div class="relative">
+                <h3 class="text-2xl font-bold mb-4" style="color: var(--text);">Sistema de Combate</h3>
                 <div class="grid md:grid-cols-2 gap-6">
-                    <div class="group relative p-6 rounded-xl border border-zinc-800 hover:border-zinc-600 transition-all duration-300 overflow-hidden">
-                        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIxLjUiIGZpbGw9IiM3MTcyN2EiLz48L3N2Zz4=')] opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
-                        <div class="relative">
-                            <h4 class="text-xl font-bold text-white mb-2">Combate en Tiempo Real</h4>
-                            <p class="text-zinc-400 font-light">Sistema automatizado con intervención estratégica del jugador.</p>
-                        </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2" style="color: var(--text);">Combate en Tiempo Real</h4>
+                        <ul class="space-y-2 font-light" style="color: var(--text); opacity: 0.7;">
+                            <li>• Sistema automatizado</li>
+                            <li>• Intervención estratégica</li>
+                            <li>• Combates dinámicos</li>
+                        </ul>
                     </div>
-                    <div class="group relative p-6 rounded-xl border border-zinc-800 hover:border-zinc-600 transition-all duration-300 overflow-hidden">
-                        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIxLjUiIGZpbGw9IiM3MTcyN2EiLz48L3N2Zz4=')] opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
-                        <div class="relative">
-                            <h4 class="text-xl font-bold text-white mb-2">Habilidades</h4>
-                            <p class="text-zinc-400 font-light">Cada Netmon tiene 4 habilidades únicas que puedes desbloquear y mejorar.</p>
-                        </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2" style="color: var(--text);">Habilidades</h4>
+                        <ul class="space-y-2 font-light" style="color: var(--text); opacity: 0.7;">
+                            <li>• 4 habilidades únicas</li>
+                            <li>• Sistema de desbloqueo</li>
+                            <li>• Mejoras progresivas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Atributos de Netmons -->
+    <div class="max-w-4xl mx-auto">
+        <div class="group relative p-6 rounded-xl border theme-transition overflow-hidden" style="border-color: var(--card-border); background-color: var(--card-bg);">
+            <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIxLjUiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjwvc3ZnPg==')] opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
+            <div class="relative">
+                <h3 class="text-2xl font-bold mb-4" style="color: var(--text);">Atributos de Netmons</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="text-xl font-bold mb-2" style="color: var(--text);">Estadísticas</h4>
+                        <ul class="space-y-2 font-light" style="color: var(--text); opacity: 0.7;">
+                            <li>• HP: Puntos de vida</li>
+                            <li>• ATK: Poder de ataque</li>
+                            <li>• DEF: Defensa</li>
+                            <li>• SPD: Velocidad</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2" style="color: var(--text);">Elementos</h4>
+                        <ul class="space-y-2 font-light" style="color: var(--text); opacity: 0.7;">
+                            <li>• Fuego: Daño alto</li>
+                            <li>• Agua: Defensa alta</li>
+                            <li>• Planta: Velocidad alta</li>
+                            <li>• Eléctrico: Ataque especial</li>
+                        </ul>
                     </div>
                 </div>
             </div>
