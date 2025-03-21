@@ -1,0 +1,92 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Descargar Netmon">
+    <section class="min-h-screen bg-black py-20 px-4">
+        <!-- SVG Pattern Definition -->
+        <svg class="hidden">
+            <defs>
+                <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                    <circle cx="10" cy="10" r="1.5" fill="currentColor" class="text-zinc-700 group-hover:text-zinc-500 transition-colors duration-300"/>
+                </pattern>
+            </defs>
+        </svg>
+
+        <!-- Título principal -->
+        <div class="max-w-4xl mx-auto text-center mb-16">
+            <h1 class="text-4xl font-extrabold text-white mb-4">Descarga Netmon</h1>
+            <p class="text-xl font-light text-zinc-400">Comienza tu aventura en el mundo digital</p>
+        </div>
+
+        <!-- Requisitos del Sistema -->
+        <div class="max-w-4xl mx-auto mb-16">
+            <div class="group relative p-6 rounded-xl border border-zinc-800 hover:border-zinc-600 transition-all duration-300 overflow-hidden">
+                <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIxLjUiIGZpbGw9IiM3MTcyN2EiLz48L3N2Zz4=')] opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
+                <div class="relative">
+                    <h2 class="text-2xl font-bold text-white mb-4">Requisitos del Sistema</h2>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Mínimos</h3>
+                            <ul class="space-y-2 text-zinc-400 font-light">
+                                <li>• Windows 10 64-bit</li>
+                                <li>• Intel Core i3 o AMD Ryzen 3</li>
+                                <li>• 4GB RAM</li>
+                                <li>• DirectX 11 compatible GPU</li>
+                                <li>• 2GB espacio en disco</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Recomendados</h3>
+                            <ul class="space-y-2 text-zinc-400 font-light">
+                                <li>• Windows 10/11 64-bit</li>
+                                <li>• Intel Core i5 o AMD Ryzen 5</li>
+                                <li>• 8GB RAM</li>
+                                <li>• DirectX 12 compatible GPU</li>
+                                <li>• 4GB espacio en disco</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botones de Descarga -->
+        <div class="max-w-4xl mx-auto">
+            <div class="gap-8">
+                <!-- Versión Estable -->
+                <div class="group relative p-6 rounded-xl border border-zinc-800 hover:border-zinc-600 transition-all duration-300 overflow-hidden">
+                    <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIxLjUiIGZpbGw9IiM3MTcyN2EiLz48L3N2Zz4=')] opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
+                    <div class="relative text-center">
+                        <h3 class="text-2xl font-bold text-white mb-4">Versión Alpha</h3>
+                        <p class="text-zinc-400 font-light mb-6">Versión 0.0.1 - La más estable y probada</p>
+                        <a href="#" class="inline-block px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-colors duration-300">
+                            Descargar v0.0.1
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notas de la Versión -->
+        <div class="max-w-4xl mx-auto mt-16">
+            <div class="group relative p-6 rounded-xl border border-zinc-800 hover:border-zinc-600 transition-all duration-300 overflow-hidden">
+                <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIxLjUiIGZpbGw9IiM3MTcyN2EiLz48L3N2Zz4=')] opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
+                <div class="relative">
+                    <h2 class="text-2xl font-bold text-white mb-4">Notas de la Versión</h2>
+                    <div class="space-y-4 text-zinc-400 font-light">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">v0.0.1 (Alpha)</h3>
+                            <ul class="list-disc list-inside space-y-1">
+                                <li>Lanzamiento inicial del juego</li>
+                                <li>Sistema de combate básico implementado</li>
+                                <li>Primera región del mundo disponible</li>
+                                <li>20 Netmons iniciales</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout> 
